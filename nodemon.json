@@ -1,0 +1,7 @@
+{
+    "verbose": true,
+    "ignore": ["node_modules", ".next"],
+    "watch": ["app"],
+    "ext": "js json jsx tsx",
+    "exec": "next dev"
+}

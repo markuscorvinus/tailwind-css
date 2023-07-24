@@ -1,0 +1,17 @@
+version: '3'
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: tailwind_dev
+    ports:
+      - '80:3000'
+    volumes:
+      - ./app:/app/app 
+    environment:
+       - REACT_APP_NAME=ImDev
+       - CHOKIDAR_USEPOLLING=true
+       
+    # env_file:
+    #   - ./.env

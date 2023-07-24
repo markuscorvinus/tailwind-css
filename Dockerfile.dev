@@ -1,5 +1,7 @@
 FROM node
 
+RUN npm install --location=global nodemon
+
 WORKDIR /app
 
 COPY /package.json .
