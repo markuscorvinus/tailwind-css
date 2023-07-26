@@ -2,8 +2,13 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello Test
-    </h1>
+    <div>
+      <h1 className="bg-green-500 text-white border-8">
+        Hello Test
+      </h1>
+      <h1 className="text-yellow-500">
+        Hello Yellow
+      </h1>
+    </div>
   )
 }
