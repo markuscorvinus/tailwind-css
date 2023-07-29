@@ -8,7 +8,7 @@ services:
     ports:
       - '80:3000'
     volumes:
-      - ./app:/app/app 
+      - ./:/app/ 
     environment:
        - REACT_APP_NAME=ImDev
        - CHOKIDAR_USEPOLLING=true
