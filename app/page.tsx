@@ -2,29 +2,65 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="Parent h-screen bg-slate-900 text-white">
-      <header className="w-full border-l-8 ">Header</header>
-      <div className="grid grid-cols-1 divide-y divide-red-500">
-        <div>01</div>
-        <div>02</div>
-        <div>03</div>
+    <div className="Parent h-screen bg-white p-4 text-white">
+      <div className="block rounded-lg border bg-white p-4 text-black shadow-md">
+        <h1 className="text-2xl">Block</h1>
+        <p className="mb-4">This is my Div</p>
+        <button className="cursor-pointer rounded-lg bg-cyan-500 px-3 py-2">
+          Say Hello
+        </button>
+        <button className="cursor-pointer rounded-lg bg-cyan-500 px-3 py-2">
+          Say Hello
+        </button>
       </div>
-      <div className="flex flex-col">
-        <input
-          type="text"
-          className="rounded-lg border border-rose-400 bg-gray-100 text-green-400 outline-none"
-        />
-        <button className="my-4 h-14 w-64 flex-none outline outline-2 outline-offset-2">
-          Button A
+      <div className="mx-4 inline-block rounded-lg border bg-white p-4 text-black shadow-lg">
+        <h1 className="text-2xl">Inline-Block</h1>
+        <p className="mb-4">This is my Div</p>
+        <button className="cursor-pointer rounded-lg bg-cyan-500 px-3 py-2">
+          Say Hello
         </button>
-        <button className="my-4 h-14 w-64 flex-none outline-dashed outline-2 outline-offset-2">
-          Button B
+        <button className="cursor-pointer rounded-lg bg-cyan-500 px-3 py-2">
+          Say Hello
         </button>
-        <button className="my-4 h-14 w-64 flex-none basis-2 outline-dotted outline-2 outline-offset-2">
-          Button C
+      </div>
+      <div className="inline-flex rounded-lg border bg-white p-4 text-black shadow-md">
+        <h1 className="text-2xl">Inline Flex</h1>
+        <p className="mb-4">This is my Div</p>
+        <button className="cursor-pointer rounded-lg bg-cyan-500 px-3 py-2">
+          Say Hello
         </button>
-        <button className="outline-3 my-4 h-14 w-64 flex-none basis-2 outline-double outline-offset-2">
-          Button D
+        <button className="cursor-pointer rounded-lg bg-cyan-500 px-3 py-2">
+          Say Hello
+        </button>
+      </div>
+      <div className="grid rounded-lg border bg-white p-4 text-black shadow-md">
+        <h1 className="text-2xl">Grid</h1>
+        <p className="mb-4">This is my Div</p>
+        <button className="cursor-pointer rounded-lg bg-cyan-500 px-3 py-2">
+          Say Hello
+        </button>
+        <button className="cursor-pointer rounded-lg bg-cyan-500 px-3 py-2">
+          Say Hello
+        </button>
+      </div>
+      <div className="inline-grid rounded-lg border bg-white p-4 text-black shadow-md">
+        <h1 className="text-2xl">Inline-Grid</h1>
+        <p className="mb-4">This is my Div</p>
+        <button className="cursor-pointer rounded-lg bg-cyan-500 px-3 py-2">
+          Say Hello
+        </button>
+        <button className="cursor-pointer rounded-lg bg-cyan-500 px-3 py-2">
+          Say Hello
+        </button>
+      </div>
+      <div className="contents rounded-lg border bg-white p-4 text-black shadow-md">
+        <h1 className="text-2xl">Contents</h1>
+        <p className="mb-4">This is my Div</p>
+        <button className="cursor-pointer rounded-lg bg-cyan-500 px-3 py-2">
+          Say Hello
+        </button>
+        <button className="cursor-pointer rounded-lg bg-cyan-500 px-3 py-2">
+          Say Hello
         </button>
       </div>
     </div>
