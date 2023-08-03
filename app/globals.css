@@ -30,7 +30,63 @@ body {
 
 @layer base {
   html {
-    @apply text-white;
     font-family: "Inter", sans-serif;
+  }
+  h1 {
+    @apply mb-2 text-3xl font-bold;
+  }
+  h2 {
+    @apply mb-1 text-xl font-semibold;
+  }
+  a {
+    @apply text-blue-600 underline decoration-wavy underline-offset-4 transition hover:text-purple-500;
+  }
+
+  .btn {
+    @apply rounded-lg px-4 py-3 text-white  hover:opacity-80 hover:transition hover:duration-300 disabled:bg-slate-500/30 hover:disabled:opacity-100;
+  }
+
+  .btn-primary {
+    @apply bg-teal-400;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-700;
+  }
+
+  input,
+  select {
+    @apply mb-1 rounded-sm border border-slate-300 p-1 px-2 outline-none;
+  }
+
+  input[type="text"] {
+    @apply placeholder:italic disabled:cursor-not-allowed disabled:bg-slate-100;
+  }
+
+  input[type="date"] {
+  }
+
+  input[type="checkbox"] {
+    @apply mr-1 mt-0.5 p-2 checked:accent-red-500;
+  }
+
+  label {
+    @apply text-sm font-medium leading-4 text-slate-700 checked:font-semibold;
+  }
+
+  select {
+    @apply pr-8;
+  }
+
+  .Select {
+    @apply w-32 inline-block cursor-pointer rounded-sm border border-slate-300 px-2 transition;
+  }
+
+  .Select .child {
+    @apply pl-1 py-1 text-slate-500
+  }
+
+  .Select ul li {
+    @apply hover:bg-slate-100;
   }
 }
